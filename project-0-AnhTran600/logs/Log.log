@@ -1127,3 +1127,163 @@ java.sql.SQLException: Closed Resultset: getLong
 2019-06-24 10:45:21 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
 2019-06-24 10:45:35 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
 2019-06-24 10:47:56 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=1, username=ANH, password=TRAN, balance=1095.0]
+2019-06-25 18:43:20 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 18:43:21 ERROR BankUserRepositoryJdbc:64 - Could not find Username.
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.service.BankConnectionUtil.getConnection(BankConnectionUtil.java:18)
+	at com.revature.repository.BankUserRepositoryJdbc.findBankUsername(BankUserRepositoryJdbc.java:45)
+	at com.revature.controller.Console.main(Console.java:31)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+Caused by: java.net.UnknownHostException: admin.c3t4snnggml8.us-east-1.rds.amazonaws.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:117)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 14 more
+2019-06-25 18:44:26 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 18:44:36 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 18:44:49 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=901.0]
+2019-06-25 18:45:28 TRACE BankUserRepositoryJdbc:118 - Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=801.0]
+2019-06-25 18:48:25 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:23:10 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:23:18 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:24:23 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:24:28 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:24:35 TRACE BankUserRepositoryJdbc:118 - Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=1144.0]
+2019-06-25 19:27:24 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:27:47 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1154.0]
+2019-06-25 19:29:07 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:31:12 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:31:46 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:32:09 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:32:18 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1111.0]
+2019-06-25 19:33:44 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:34:24 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:34:38 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:36:19 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:36:41 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:37:28 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:37:54 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:41:46 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:41:52 TRACE BankUserRepositoryJdbc:118 - Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=1114.0]
+2019-06-25 19:43:41 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:43:49 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1113.0]
+2019-06-25 19:43:58 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1110.0]
+2019-06-25 19:45:43 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:46:46 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:47:06 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:47:13 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:47:36 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:47:43 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:48:03 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:49:41 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:49:54 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:50:20 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1100.0]
+2019-06-25 19:51:30 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:52:34 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:54:11 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:55:49 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:57:52 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:57:58 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:59:12 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 19:59:52 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:00:06 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:00:21 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:00:30 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:01:24 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:01:32 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:01:50 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:02:07 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:02:29 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:02:39 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:02:48 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:03:45 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1000.0]
+2019-06-25 20:05:07 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:06:37 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:06:54 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:07:52 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:13:57 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:16:26 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:16:31 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:16:37 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:16:56 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:17:09 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:18:17 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:18:39 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:19:04 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:19:13 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1000.0]
+2019-06-25 20:23:03 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:23:23 TRACE BankUserRepositoryJdbc:99 - Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=0.0]
+2019-06-25 20:23:57 TRACE BankUserRepositoryJdbc:118 - Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=1000.0]
+2019-06-25 20:25:18 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:25:30 TRACE BankUserRepositoryJdbc:135 - Entering findMaxId method without parameter: 
+2019-06-25 20:25:30 TRACE BankUserRepositoryJdbc:21 - Entering createBankUser method with parameter: BankUser [id=6, username=the, password=anh, balance=1.0]
+2019-06-25 20:25:38 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:27:32 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:27:56 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:30:08 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:32:02 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:32:06 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:32:22 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:32:29 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:32:45 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-25 20:36:49 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:14:56 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:14:56 ERROR BankUserRepositoryJdbc:64 - Could not find Username.
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:715)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:385)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.revature.service.BankConnectionUtil.getConnection(BankConnectionUtil.java:18)
+	at com.revature.repository.BankUserRepositoryJdbc.findBankUsername(BankUserRepositoryJdbc.java:45)
+	at com.revature.controller.Console.main(Console.java:33)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+	... 9 more
+Caused by: java.net.UnknownHostException: admin.c3t4snnggml8.us-east-1.rds.amazonaws.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:117)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+	... 14 more
+2019-06-26 09:15:20 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:15:33 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:16:48 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:16:53 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:20:15 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:20:18 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:20:23 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 
+2019-06-26 09:20:55 TRACE BankUserRepositoryJdbc:44 - Entering find Username method with parameter: 

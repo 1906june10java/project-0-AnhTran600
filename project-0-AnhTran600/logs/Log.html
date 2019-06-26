@@ -6855,3 +6855,1925 @@ Log session start time Mon Jun 24 10:45:15 EDT 2019<br>
 <td>BankUserRepositoryJdbc.java:99</td>
 <td title="Message">Entering withdraw method with parameter: BankUser [id=1, username=ANH, password=TRAN, balance=1095.0]</td>
 </tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 18:42:52 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>538</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:64</td>
+<td title="Message">Could not find Username.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:715)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:385)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.BankConnectionUtil.getConnection(BankConnectionUtil.java:18)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankUserRepositoryJdbc.findBankUsername(BankUserRepositoryJdbc.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Console.main(Console.java:31)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 9 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.UnknownHostException: admin.c3t4snnggml8.us-east-1.rds.amazonaws.com
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 14 more
+</td></tr>
+
+<tr>
+<td>65860</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>75471</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>89014</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=901.0]</td>
+</tr>
+
+<tr>
+<td>127237</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:118</td>
+<td title="Message">Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=801.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 18:48:22 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:23:08 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>7484</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:24:20 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>5670</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>12683</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:118</td>
+<td title="Message">Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=1144.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:27:21 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>23392</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1154.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:29:05 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:31:06 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:31:43 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>23094</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>32267</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1111.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:33:42 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:34:21 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:34:36 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:36:16 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:36:39 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:37:27 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>25312</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:41:44 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>6229</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:118</td>
+<td title="Message">Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=1114.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:43:37 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>8494</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1113.0]</td>
+</tr>
+
+<tr>
+<td>16872</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1110.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:45:41 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:46:44 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>19548</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>26678</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:47:35 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>7061</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>26563</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:49:38 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>13122</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>38434</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1100.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:51:27 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:52:32 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:54:06 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:55:47 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:57:49 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>6740</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:58:52 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 19:59:50 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>14041</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>28904</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>37564</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:01:22 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>7886</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>25875</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>42996</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>64504</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>75037</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>83598</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>140645</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1000.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:05:04 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:06:34 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>16544</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>74663</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:13:54 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:16:19 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>5238</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>10780</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>29643</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>42845</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>110514</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>133105</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>157771</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>166646</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=1000.0]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:23:00 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>19993</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:99</td>
+<td title="Message">Entering withdraw method with parameter: BankUser [id=3, username=the, password=anh, balance=0.0]</td>
+</tr>
+
+<tr>
+<td>54561</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:118</td>
+<td title="Message">Entering deposit method with parameter: BankUser [id=3, username=the, password=anh, balance=1000.0]</td>
+</tr>
+
+<tr>
+<td>135195</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>147448</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:135</td>
+<td title="Message">Entering findMaxId method without parameter: </td>
+</tr>
+
+<tr>
+<td>147841</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:21</td>
+<td title="Message">Entering createBankUser method with parameter: BankUser [id=6, username=the, password=anh, balance=1.0]</td>
+</tr>
+
+<tr>
+<td>155371</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:27:29 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>23971</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:30:06 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:31:59 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>3705</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:32:19 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>7061</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>23171</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Jun 25 20:36:42 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Jun 26 09:14:50 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>419</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:64</td>
+<td title="Message">Could not find Username.</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:673)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:715)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:385)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.BankConnectionUtil.getConnection(BankConnectionUtil.java:18)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.BankUserRepositoryJdbc.findBankUsername(BankUserRepositoryJdbc.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Console.main(Console.java:33)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:594)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:229)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1360)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:486)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 9 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.UnknownHostException: admin.c3t4snnggml8.us-east-1.rds.amazonaws.com
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:411)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 14 more
+</td></tr>
+
+<tr>
+<td>24519</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>37345</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>111851</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>117605</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Jun 26 09:20:13 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>3087</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>7994</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>
+
+<tr>
+<td>40430</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.repository.BankUserRepositoryJdbc category">com.revature.repository.BankUserRepositoryJdbc</td>
+<td>BankUserRepositoryJdbc.java:44</td>
+<td title="Message">Entering find Username method with parameter: </td>
+</tr>

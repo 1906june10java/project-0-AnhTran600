@@ -40,11 +40,16 @@ public class Display {
 		System.out.println("- No Username Found -");
 		System.out.println("- - - - - - - - - - -");
 	}
+	public static void usernameTaken() {
+		System.out.println("- - - - - - - - - - -");
+		System.out.println("- Username Taken     -");
+		System.out.println("- - - - - - - - - - -");
+	}
 	public static void quitMenu() {
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - --");
 		System.out.println("- Press \"1\" and \"Enter\" to register                  -");
 		System.out.println("- Press \"2\" and \"Enter\" to exit                      -");
-		System.out.println("- Press any other key and \"Enter\" to Log In again.   -");
+		System.out.println("- Press any other key and \"Enter\" to Log In.   -");
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - --");
 	}
 	public static void mainMenu() {
@@ -68,6 +73,6 @@ public class Display {
 		System.out.println(" Enter NEW Password:   ");
 	}
 	public static void registerMenu3() {
-		System.out.println(" Enter NEW deposit amount:   ");
+		System.out.println(" Enter first deposit amount:   ");
 	}
 }
